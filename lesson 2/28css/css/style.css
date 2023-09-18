@@ -1,0 +1,61 @@
+/* Приоритет 10 */
+.some-text {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.some-text-open-sans {
+    font-family: "Open sans", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.some-text-through {
+    font-family: "Times new roman", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    font-weight: 400;
+    text-decoration: line-through;
+}
+
+.some-text-uppercase {
+    font-family: "Times new roman", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#elem {
+    text-decoration-style: wavy;
+    text-decoration-color: #200058;
+    text-decoration-line: overline;
+}
+
+.some-text-word-spacing {
+    color: #200058;
+    font-family: "Times new roman", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    font-weight: 400;
+    word-spacing: 30px;
+}
+
+.some-text-letter-spacing {
+    font-family: "Times new roman", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
