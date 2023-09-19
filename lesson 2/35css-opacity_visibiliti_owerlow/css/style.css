@@ -1,0 +1,33 @@
+body {
+    font-size: 40px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.block,
+.inline {
+    background: #8b8883;
+}
+
+.block {
+    padding: 30px;
+    margin: 50px;
+}
+
+/* ======================================================= */
+
+.block {
+    display: inline-block;
+    width: 400px;
+}
+
+.inline {
+    /* display: block; */
+    display: none;
+}
+
+.img {
+    display: block;
+}
