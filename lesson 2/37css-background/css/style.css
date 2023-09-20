@@ -1,0 +1,36 @@
+body {
+    font-size: 40px;
+    background: #f3f3f3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.block {
+    margin: 5vw;
+    height: 50vh;
+    box-shadow: 0 0.5vw 3vw #0615633b;
+    border-radius: 3vw;
+    background: #fff;
+}
+
+/* ======================================================= */
+
+.block {
+    overflow: auto;
+    /* background: url("../img/tiger.jpg") 50% 50% / contain no-repeat; */
+    /* background: url("../img/tiger.jpg") 50% 50% / cover no-repeat; */
+    background: url("../img/tiger.jpg") 100px 50% /50% no-repeat, url("../img/monkey.jpg") 500px 50% /100% no-repeat;
+    /* background-color: #000; */
+    /* background-image: url("../img/tiger.jpg"); */
+    /* background-image: linear-gradient(90deg, #ff9191, #9cddf7, #000); */
+    /* background-image: linear-gradient(90deg, #ff9191 40%, #9cddf7); */
+    /* background-image: radial-gradient(#ff9191 40%, #9cddf7); */
+    /* background-repeat: no-repeat; */
+    /* background-position: 100px 50%, 0 0; */
+    /* background-attachment: fixed; */
+    /* background-size: 100px 100px; */
+    /* background-size: cover; */
+    /* background-size: contain; */
+}
