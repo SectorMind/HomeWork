@@ -80,3 +80,21 @@ body {
 .paragraph {
     margin-bottom: 15px;
 }
+
+.hero-buttons {
+    display: flex;
+    font-display: column;
+}
+
+.hero-button-one,
+.hero-button-two {
+    border-radius: 100%;
+    padding: 18px 30px;
+}
+
+.hero-button-one {
+    background: linear-gradient(180deg, #00A4CC 0%, #2766AE 100%);
+}
+.hero-button-two {
+    background: linear-gradient(95.22deg, #00A4CC 6.7%, #2766AE 91.35%);
+}
