@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прокаченные пикчи</title>
+</head>
+
+<body>
+    <picture>
+        <source media="(max-width: 1050px)" srcset="img/puppy-500x333.jpg">
+        <source media="(max-width: 1250px)" srcset="img/puppy-1000x667.jpg">
+        <img src="img/puppy-1200x800.jpg" alt="Puppy">
+    </picture>
+    <picture>
+        <source media="(max-width: 1050px)" srcset="img/puppy-1000x667.webp" type="imgage/webp">
+        <source media="(max-width: 1250px)" srcset="img/puppy-1000x667.jpg" type="imgage/jpg">
+        <source srcset="img/puppy-1200x800.webp" type="imgage/webp">
+        <!-- <source srcset="img/puppy-1200x800.png" type="imgage/png"> -->
+        <img src="img/puppy-1200x800.jpg" alt="Puppy">
+    </picture>
+</body>
+
+</html>
