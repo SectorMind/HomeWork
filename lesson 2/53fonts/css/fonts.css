@@ -1,0 +1,21 @@
+/* @font-face {
+    font-family: "Open Sans";
+    src: 
+        local('Open Sans Medium'),
+        local('OpenSans-Medium'),
+        url('../fonts/OpenSans-Medium.woff2') format('woff2'),
+        url('../fonts/OpenSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+} */
+
+@font-face {
+    font-family: 'Pixelify Sans';
+    src: local('Pixelify Sans Medium'), local('PixelifySans-Medium'),
+        url('../fonts/PixelifySans-Medium.woff2') format('woff2'),
+        url('../fonts/PixelifySans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
