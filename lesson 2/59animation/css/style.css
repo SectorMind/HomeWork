@@ -1,0 +1,62 @@
+body {
+    background-color: #1e1e20;
+}
+
+.wrapper {
+    padding: 50px;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    height: 200px;
+    background-color: #444;
+}
+
+.block {
+    background-color: #fff;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    text-align: center;
+    font-size: 50px;
+    color: #e77474;
+}
+
+/* ========================================================= */
+
+.block {
+    animation: move-block 1s .3s infinite alternate,
+    color-block 1s .3s infinite alternate;
+
+    /* animation-name: ; */
+    /* animation-duration: ; */
+    /* animation-delay: ; */
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: ; */
+    /* animation-fill-mode: forwards; */
+    animation-timing-function: linear;
+
+}
+
+@keyframes move-block {
+    0% {
+        left: 0px;
+    }
+    50% {
+        border-radius: 50%;
+        color: #fff;
+    }
+    100% {
+        left: calc(100% - 200px);
+    }
+}
+
+@keyframes color-block {
+    0% {
+        background-color: #fff;
+    }
+    100% {
+        background-color: #e77474;
+    }
+}
