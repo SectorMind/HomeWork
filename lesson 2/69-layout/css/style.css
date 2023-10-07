@@ -1,3 +1,5 @@
+/* +++ general purpose +++ */
+
 body {
     font-family: "Montserrat", "Arial", sans-serif;
     line-height: calc(20px / 16px);
@@ -12,8 +14,11 @@ body {
     height: 100%;
 }
 
+/* +++ header +++ */
+
 .header {
     min-height: 108px;
+    line-height: 150%; /* 24px */ 
 }
 .header__inner {
     display: grid;
@@ -25,9 +30,9 @@ body {
 .header__logo {
     max-width: 54px;
 }
-.header__socials {
+/* .header__inner>*:last-child {
     justify-self: end;
-}
+} */
 
 .nav {
 }
@@ -45,8 +50,30 @@ body {
     display: flex;
     gap: 10px 30px;
     flex-wrap: wrap;
+    justify-content: end;
 }
 .socials__item {
 }
 .socials__link {
+}
+
+/* +++ section +++ */
+
+.hero {
+    padding: 120px 0;
+    background: #25282B;
+    color: #F8FCFF;
+    line-height: 150%;
+}
+.container {
+}
+.hero__title {
+    font-weight: 600;
+    font-size: 52px;
+}
+.hero_list {
+}
+.hero__list-item {
+}
+.button {
 }
