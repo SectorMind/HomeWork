@@ -18,7 +18,7 @@ body {
 
 .header {
     min-height: 108px;
-    line-height: 150%; /* 24px */ 
+    line-height: 1.5; /* 24px */ 
 }
 .header__inner {
     display: grid;
@@ -61,19 +61,91 @@ body {
 
 .hero {
     padding: 120px 0;
-    background: #25282B;
     color: #F8FCFF;
-    line-height: 150%;
+    line-height: 1.5;
+    position: relative;
 }
-.container {
+
+.hero__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .hero__title {
     font-weight: 600;
     font-size: 52px;
+    margin-bottom: 30px;
 }
 .hero_list {
+    font-size: 24px;
+    margin-bottom: 40px;
 }
+
 .hero__list-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 15px;
+    transition: all .5s;
 }
+.hero__list-item:last-child {
+    margin-bottom: 0;
+}
+.hero__list-item:hover {
+    color: #1D6FB6;
+}
+.hero__list-item path {
+    transition: all .5s;
+}
+.hero__list-item:hover path {
+    fill: #1D6FB6;
+}
+
+.hero__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+.hero__video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero__video::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #102e49cc;
+    /* opacity: .8; */
+}
+
 .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #1D6FB6;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+
+    height: 56px;
+    width: 100%;
+    max-width: 288px;
+    background: #D0DCE7;
+    border-radius: 100px;
+}
+.button:hover {
+    color: #F8FCFF;
+    background: #83ADD3;
+    transition: all .5s;
 }
