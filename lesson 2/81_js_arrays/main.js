@@ -1,20 +1,42 @@
-// Arrays
+// Function
 
-// const numbers = [1, '2', true, [1,2,3], 5]
-const numbers = [1, 2, 3, 4, 5]
+// function sumNumbers(firstNumber, secondNumber) {
+//     return firstNumber + secondNumber
+// }
 
-// numbers[4] = 6
+// const result = sumNumbers(3, 10)
+// console.log(result)
 
-// console.log(numbers)
+// const users = ['John', 'Ann', 'Alex', 'Max']
 
-for (let i = 0; i < numbers.length; i++) {
-    // console.log(numbers[i] + 1)
-}
+// function checkForCopyItem(array, item) {
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i] === item) {
+//             return `There is a copy of the ${item} in array`
+//         }
+//     }
+//     return 'There is no such item in the array'
+// }
 
-// console.log(numbers)
+// const users = ['John', 'Ann', 'Alex', 'Max']
+
+// // стрелочная функция
+// const checkForCopyItem = (array, item) => {
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i] === item) {
+//             return `There is a copy of the ${item} in array`
+//         }
+//     }
+//     return 'There is no such item in the array'
+// }
+
+// console.log(checkForCopyItem(users, 'Alex'))
+
+
 
 // Home work
 // 1)
+console.log('Задание 1')
 const randomNumbers = [10, 21, 3, 4, 5, 76, 13]
 for (let i = 0; i < randomNumbers.length; i++) {
     if (randomNumbers[i]%2 == 0) {
@@ -23,6 +45,7 @@ for (let i = 0; i < randomNumbers.length; i++) {
 }
 
 // 2)
+console.log('Задание 2')
 const rainbowColor = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
 
 for (let i = rainbowColor.length - 1; i >= 0; i--) {
