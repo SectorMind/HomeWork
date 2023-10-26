@@ -29,6 +29,9 @@
 .main {
     flex-grow: 1;
 }
+.main__about {
+    padding: 140px 0;
+}
 
 .container {
     max-width: 1310px;
@@ -152,7 +155,9 @@
     bottom: 0px;
     transform: rotate(-45deg);
 }
-
+.heder__hero {
+    padding: 50px 0 140px;
+}
 /* ++++++++++++++++++++ header hero ++++++++++++++++++++ */
 .hero {
     padding: 50px 0 140px;
@@ -257,6 +262,36 @@
     opacity: 1;
 }
 
+/* ++++++++++++++++++++ section 1 ++++++++++++++++++++ */
+
+.about {
+}
+.about__inner {
+}
+.about__img {
+}
+.about__img-control {
+}
+.about__img-button {
+}
+.about__body {
+}
+.about__heading {
+}
+.about__title {
+}
+.about__title-text {
+}
+.about__text {
+}
+.about__grid {
+}
+.about__grid-item {
+}
+.about__grid-img {
+}
+.about__grid-text {
+}
 
 
 /* ++++++++++++++++++++ footer ++++++++++++++++++++ */
