@@ -267,28 +267,97 @@
 .about {
 }
 .about__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 53px;
 }
 .about__img {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.about__img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
 }
 .about__img-control {
+    position: absolute;
+    bottom: 4.7%;
+    left: 5%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 300px;
+    text-align: left;
+    background: #957b97e6;
+    border-radius: 20px;
+    padding: 15px 20px;
+    color: var(--general-bg);
 }
 .about__img-button {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    background: var(--general-bg);
+    position: relative;
+}
+.about__img-button::before {
+    content: '';
+    position: absolute;
+    inset: 5px;
+    border-radius: 50%;
+    border: 1px solid #CEAAD0;
+
+    opacity: 0;
+    transition: (--transition);
+}
+.about__img-button:hover::before {
+    opacity: 1;
 }
 .about__body {
 }
 .about__heading {
+    margin-bottom: 30px;
 }
 .about__title {
+    font-family: 'Gabriola';
+    font-size: 74px;
+    line-height: 0.82;
+    color: var(--accent-text);
 }
 .about__title-text {
 }
 .about__text {
+    margin-bottom: 40px;
 }
 .about__grid {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(2, 1fr);
 }
 .about__grid-item {
+    background: var(--accent-bg);
+    border-radius: 20px;
+    padding: 29px 24px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 .about__grid-img {
+    border: 1px solid var(--general-text);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .about__grid-text {
 }
@@ -486,7 +555,7 @@
     }
 }
 @media (max-width: 540px) {
-    .hero {
+    .header__hero {
         padding-bottom: 80px;
     }
     .hero__title {
