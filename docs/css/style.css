@@ -5,6 +5,7 @@
 	--accent-bg: #FFE0CB;
 	--accent-color: #FFA55C;
     --transition: all .4s;
+    --border-radius: 20px
 }
 
 .body {
@@ -15,6 +16,9 @@
     background: var(--general-bg); 
 }
 .body--opened-menu {
+    overflow: hidden;
+}
+.body--opened-modal {
     overflow: hidden;
 }
 
@@ -41,6 +45,7 @@
 }
 
 .button {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,6 +61,74 @@
 }
 .button:hover {
     background: #FF9138;
+}
+
+/* ++++++++++++++++++++ modal ++++++++++++++++++++ */
+
+.modal {
+    position: fixed;
+    inset: 0;  /* Растягиваем на весь экран */
+    z-index: 10;
+    background: #00000048;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal__window {
+    position: relative;
+    background: var(--general-bg);
+    border-radius: var(--border-radius);
+    padding: 0 60px 60px;
+    max-width: 428px;
+}
+.modal__cancel {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.modal__cancel path rect {
+    transition: var(--transition);
+}
+.modal__cancel:hover path,
+.modal__cancel:hover rect {
+    stroke: #AC907A;
+}
+.modal__img {
+    margin: -65px 0 15px 13px;
+}
+.modal__title {
+    font-family: 'Gabriola';
+    font-size: 42px;
+    line-height: .9;
+    color: var(--accent-text);
+    margin-bottom: 10px;
+}
+.modal__text {
+    margin-bottom: 30px;
+}
+.modal__form {
+}
+.modal__form-input {
+    display: block;
+    width: 100%;
+    background: #00000000;
+    border: 1px solid #AC907A;
+    border-radius: 100px;
+    padding: 19px 42px 19px 28px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    transition: var(--transition);
+}
+.modal__form-input:hover {
+    border-color: var(--accent-color);
+}
+.modal__form-input::placeholder {
+    color: var(--accent-color);
+    transition: var(--transition);
+}
+.modal__form-input:hover::placeholder {
+    color: var(--accent-color);
 }
 
 /* ++++++++++++++++++++ header ++++++++++++++++++++ */
@@ -106,7 +179,7 @@
     border-radius: 50%;
 
     opacity: 0;
-    transition: (--transition);
+    transition: var(--transition);
 }
 .nav__link:hover::before {
     opacity: 1;
@@ -272,7 +345,7 @@
     gap: 53px;
 }
 .about__img {
-    border-radius: 20px;
+    border-radius: var(--border-radius);
     overflow: hidden;
     position: relative;
 }
@@ -292,7 +365,7 @@
     max-width: 300px;
     text-align: left;
     background: #957b97e6;
-    border-radius: 20px;
+    border-radius: var(--border-radius);
     padding: 15px 20px;
     color: var(--general-bg);
 }
@@ -343,7 +416,7 @@
 }
 .about__grid-item {
     background: var(--accent-bg);
-    border-radius: 20px;
+    border-radius: var(--border-radius);
     padding: 29px 24px;
     display: flex;
     align-items: center;
