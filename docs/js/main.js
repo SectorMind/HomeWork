@@ -38,9 +38,12 @@
 
         const target = e.target
         
-        if (target.closest('.modal__cancel') || target.classList.contains('modal')) {
+        if (target.closest('.modal__cancel') || target.classList.contains('modal')){
             document.body.classList.remove('body--opened-modal')
         }
+        // else if (target.closest('ecs')) {
+        //     document.body.classList.remove('body--opened-modal')
+        // }
     }
 
 })()
