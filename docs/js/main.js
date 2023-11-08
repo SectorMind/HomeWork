@@ -43,7 +43,7 @@
     }
 
     document.addEventListener('keydown', event => {
-        if (event.key === 'Escape' && modal.classList.contains('body--opened-modal')) {
+        if (event.key === 'Escape') {
             document.body.classList.remove('body--opened-modal');
         }
     });

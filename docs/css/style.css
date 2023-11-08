@@ -70,6 +70,7 @@
     inset: 0;  /* Растягиваем на весь экран */
     z-index: 10;
     background: #00000071;
+    padding: 15px;
 
     display: flex;
     align-items: center;
@@ -106,6 +107,7 @@
 }
 .modal__img {
     margin: -65px 0 15px 13px;
+    max-width: 100%;
 }
 .modal__title {
     font-family: 'Gabriola';
@@ -377,19 +379,21 @@
 }
 .about__inner {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 53px;
+    grid-template-columns: 1fr 1.05fr;
+    grid-template-rows: repeat(2, auto);
+    gap: 40px 53px;
 }
 .about__img {
     border-radius: var(--border-radius);
     overflow: hidden;
     position: relative;
+    grid-row: 1/-1;
 }
 .about__img>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 50% 50%;
+    object-position: 0% 50%;
 }
 .about__img-control {
     position: absolute;
@@ -597,6 +601,17 @@
         text-align: center;
     }
 }
+@media (max-width: 1100px){
+    .about__img {
+        grid-row: auto;
+    }
+    .about__body {
+        align-self: center;
+    }
+    .about__grid {
+        grid-column: 1/-1;
+    }
+}
 @media (max-width: 900px) {
     .nav {
         position: fixed;
@@ -662,12 +677,61 @@
         display: flex;
         margin: 0 0 30px;
     }
+    /* +++ about +++ */
+    .about__inner {
+        grid-template: none;
+    }
+    .about__img {
+        max-width: 500px;
+        justify-self: center;
+    }
+    .about__body {
+        text-align: center;
+    }
+    .about__grid {
+        grid-template: none;
+    }
 }
 @media (max-width: 540px) {
+    .main__about {
+        padding: 60px 0 80px;
+
+    }
+    /* +++ header +++ */
     .header__hero {
         padding-bottom: 80px;
     }
     .hero__title {
         font-size: 12vw;
+    }
+    /* +++ about +++ */
+    .about__title {
+        font-size: 12vw;
+    }
+    .about__img-control {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        max-width: none;
+        border-radius: 0;
+        padding: 10px 15px;
+    }
+    .about__grid {
+        gap: 15px;
+    }
+    .about__grid-item {
+        padding: 10px 15px;
+    }
+}
+@media (max-width: 450px) {
+    .modal__img {
+        width: 50%;
+        margin-top: -45px;
+    }
+    .modal__title {
+        font-size: 35px;
+    }
+    .modal__window {
+        padding: 0 15px 45px;
     }
 }
