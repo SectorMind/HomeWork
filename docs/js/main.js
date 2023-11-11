@@ -76,7 +76,5 @@
         
         tabControl.classList.add('tab-controls__link--active');
         tabContent.classList.add('tab-content--show');
-        
-        
     }
 })();

@@ -528,6 +528,17 @@
     display: flex;
 }
 
+.accordion-list {
+}
+.accordion-list__item {
+}
+.accordion-list__item--opened {
+}
+.accordion-list__control {
+}
+.accordion-list__content {
+}
+
 /* ++++++++++++++++++++ section 3 ++++++++++++++++++++ */
 
 
