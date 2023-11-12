@@ -514,14 +514,6 @@
 }
 
 .tab-content {
-    background: #c2c2c2;
-    border-radius: var(--border-radius);
-    height: 400px;
-    font-size: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     display: none;
 }
 .tab-content--show {
