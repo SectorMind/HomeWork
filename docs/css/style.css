@@ -517,18 +517,62 @@
     display: none;
 }
 .tab-content--show {
-    display: flex;
+    display: block;
 }
 
 .accordion-list {
 }
 .accordion-list__item {
+    border: 1px solid var(--accent-color);
+    border-radius: var(--border-radius);
+
+    margin-bottom: 30px;
+}
+.accordion-list__item:last-child {
+    margin-bottom: 0px;
 }
 .accordion-list__item--opened {
 }
 .accordion-list__control {
+    padding: 41px 30px;
+    width: 100%;
+    background: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: 'Gabriola';
+    font-size: 42px;
+    line-height: 90%;
+    color: var(--accent-text);
+}
+.accordion-list__control-title {
+}
+.accordion-list__control-icon {
 }
 .accordion-list__content {
+    padding: 0 30px 40px;
+    display: flex;
+    gap: 80px;
+}
+
+.accordion-content {
+}
+.accordion-content__col {
+}
+.accordion-content__title {
+    text-transform: uppercase;
+    line-height: 1.6;
+    color: #CEAAD0;
+}
+.accordion-content__list {
+}
+.accordion-content__item {
+}
+.accordion-content__icon {
+}
+.accordion-content__text {
 }
 
 /* ++++++++++++++++++++ section 3 ++++++++++++++++++++ */
