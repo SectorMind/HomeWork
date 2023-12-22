@@ -342,6 +342,87 @@
 
 /* ++++++++++++++++++++ section 3 ++++++++++++++++++++ */
 
+.gallery {
+}
+.gallery__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin-bottom: 40px;
+}
+.gallery__img {
+    justify-self: center;
+}
+.gallery__img img{
+    max-width: 100%;
+}
+.gallery__content {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 15px;
+}
+.gallery__info {
+    max-width: 380px;
+}
+.gallery__title {
+    margin-bottom: 20px;
+}
+.gallery__text {
+}
+.gallery__nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-family: 'Gabriola';
+    font-size: 42px;
+    line-height: .9;
+}
+.gallery__prev,
+.gallery__next {
+    background: transparent;
+    cursor: pointer;
+
+    border: 1.5px solid var(--accent-color);
+    border-radius: 50%;
+    flex-shrink: 0;  /*чтобы не сплюскивались*/
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+.gallery__prev path, /*path (при наведении сами стрелочки)*/
+.gallery__next path {
+    transition: var(--transition);
+}
+.gallery__prev:hover, /*hover (при наведении)*/
+.gallery__next:hover {
+    background: var(--accent-color);
+}
+.gallery__prev:hover path, /*(при наведении)*/
+.gallery__next:hover path {
+    fill: var(--general-bg);  /* svg перекрасит*/
+}
+.gallery__prev {
+}
+.gallery__pagination {
+    display: flex;
+}
+.gallery__next {
+}
+.gallery__slider {
+}
+.gallery__wrapper {
+}
+.gallery__slide {
+    border-radius: var(--border-radius);
+    overflow: hidden;  /* чтобы сработал бодер радиус */
+}
+.gallery__slide img{
+    width: 100%;  /* чтобы слушалось ширины родителя */
+}
 
 
 
