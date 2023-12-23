@@ -115,12 +115,12 @@
 
     const swiper = new Swiper('.gallery__slider', {
 
-        spaceBetween: 32,
-        slidesPerView: 4,
+        spaceBetween: 15,
+        slidesPerView: 2,
 
         // Optional parameters
         // direction: 'vertical',
-        loop: true,
+        // loop: true,
 
         // If we need pagination
         pagination: {
@@ -138,6 +138,24 @@
         // scrollbar: {
         //     el: '.swiper-scrollbar',
         // },
+
+        breakpoints: {
+            // when window width is >= 320px
+            // 320: {
+            //     slidesPerView: 2,
+            //     spaceBetween: 20
+            // },
+            // when window width is >= 640px
+            601: {
+                slidesPerView: 3,
+            },
+            801: {
+                spaceBetween: 32,
+            },
+            1101: {
+                slidesPerView: 4,
+            },
+        }
     });
 
 })();
