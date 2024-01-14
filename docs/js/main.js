@@ -94,6 +94,7 @@
 
             const accordionControl = e.target.closest('.accordion-list__control');
             if (!accordionControl) return;
+            e.preventDefault();
             const accordionItem = accordionControl.parentElement;
             const accordionContent = accordionControl.nextElementSibling;
 
@@ -157,5 +158,62 @@
             },
         }
     });
+
+    /* slider-reviews */
+    
+    new Swiper('.testimonials__slider', {
+
+        spaceBetween: 0,
+        slidesPerView: 1,
+        centeredSlides: true,
+
+        // Optional parameters
+        // direction: 'vertical',
+        // loop: true,
+
+        // If we need pagination
+        // pagination: {
+            //     el: '.gallery__pagination',
+        //     type: 'fraction'
+        // },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.testimonials__next',
+            prevEl: '.testimonials__prev',
+        },
+
+        // And if we need scrollbar
+        // scrollbar: {
+        //     el: '.swiper-scrollbar',
+        // },
+
+        breakpoints: {
+            // when window width is >= 320px
+            // 320: {
+            //     slidesPerView: 2,
+            //     spaceBetween: 20
+            // },
+            // when window width is >= 640px
+            901: {
+                slidesPerView: 1.5,
+            },
+            1101: {
+                slidesPerView: 2.1,
+            }
+        },
+
+        scrollbar: {
+            el: '.swiper-scrollbar',
+            draggable: true,
+        },
+    });
+    
+    // mask for tel
+
+    const telInputs = document.querySelectorAll('input[type="tel"]');
+    telInputs.forEach(el => console.log(el));
+    const im = new Inputmask('+7 (999) 999-99-99');
+    im.mask(telInputs);
 
 })();
