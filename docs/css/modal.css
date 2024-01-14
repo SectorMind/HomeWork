@@ -38,7 +38,7 @@
 }
 .modal__cancel:hover path,
 .modal__cancel:hover rect {
-    stroke: #AC907A;
+    stroke: var(--input-color);
 }
 .modal__img {
     margin: -65px 0 15px 13px;
@@ -69,7 +69,7 @@
     top: 12px;
     left: 28px;
     font-size: 11px;
-    color: #AC907A;
+    color: var(--input-color);
 
     opacity: 0;
     visibility: hidden;
@@ -79,7 +79,7 @@
     display: block;
     width: 100%;
     background: #00000000;
-    border: 1px solid #AC907A;
+    border: 1px solid var(--input-color);
     border-radius: 100px;
     padding: 19px 42px 19px 28px;
     font-size: 16px;

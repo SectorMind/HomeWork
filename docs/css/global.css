@@ -7,7 +7,11 @@
 	--accent-color: #FFA55C;
 	--input-color: #AC907A;
     --transition: all .4s;
-    --border-radius: 20px
+    --border-radius: 20px;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
 
 .body {

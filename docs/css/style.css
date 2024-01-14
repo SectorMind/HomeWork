@@ -73,12 +73,6 @@
 .about__heading {
     margin-bottom: 30px;
 }
-.about__title {
-}
-.about__title-text {
-}
-.about__text {
-}
 .about__grid {
     display: grid;
     gap: 32px;
@@ -102,8 +96,6 @@
     align-items: center;
     justify-content: center;
 }
-.about__grid-text {
-}
 
 /* ++++++++++++++++++++ section 2 ++++++++++++++++++++ */
 .program__top {
@@ -115,9 +107,6 @@
 }
 .program__title {
     margin-bottom: 20px;
-}
-.program__text {
-
 }
 .program__tab-content {
     margin-bottom: 40px;
@@ -173,8 +162,6 @@
     font-size: 16px;
     margin-left: 35%;
 }
-.program__price {
-}
 .program__price-text {
     line-height: 1.6;
     text-transform: uppercase;
@@ -200,8 +187,6 @@
 .tab-controls {
     display: flex;
     gap: 26px;
-}
-.tab-controls__item {
 }
 .tab-controls__link {
     display: block;
@@ -331,8 +316,6 @@
 
 /* ++++++++++++++++++++ section 3 ++++++++++++++++++++ */
 
-.gallery {
-}
 .gallery__inner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -357,8 +340,6 @@
 }
 .gallery__title {
     margin-bottom: 20px;
-}
-.gallery__text {
 }
 .gallery__nav {
     display: flex;
@@ -415,8 +396,6 @@
 .gallery__next:hover path {
     fill: var(--general-bg);  /* svg перекрасит*/
 }
-.gallery__prev {
-}
 .gallery__pagination {
     display: flex;
 
@@ -438,8 +417,6 @@
 
 /* ++++++++++++++++++++ section 4 ++++++++++++++++++++ */
 
-.testimonials {
-}
 .testimonials__inner {
     display: flex;
     align-items: end;
@@ -452,8 +429,6 @@
 }
 .testimonials__title {
     margin-bottom: 20px;
-}
-.testimonials__text {
 }
 .testimonials__nav {
     display: flex;
@@ -559,8 +534,6 @@
     margin: 0 auto;
     color: var(--accent-text-2);
 }
-.testimonials__quote {
-}
 .testimonials__quote span {
     display: block;
     font-family: 'Gabriola';
@@ -584,7 +557,7 @@
 
 .contact {
     padding: 140px 0;
-    background: url("../img/decor/bg-contact.png") 50% 0% / cover no-repeat;
+    background: url("../img/decor/bg-footer.png") 50% 0% / cover no-repeat;
 }
 .contact__inner {
     display: flex;
@@ -616,8 +589,6 @@
 }
 .contact__text {
     margin-bottom: 40px;
-}
-.contact__form {
 }
 .contact__label {
     margin-bottom: 10px;
@@ -692,6 +663,10 @@
 /* ++++++++++++++++++++ media queries ++++++++++++++++++++ */
 
 @media (max-width: 1200px) {
+    html {
+        scroll-padding-top: 60px;
+    }
+
     .hero__img {
         margin: 0;
         max-width: 377px;
@@ -833,6 +808,10 @@
     }
 }
 @media (max-width: 800px) {
+    html {
+        scroll-padding-top: 50px;
+    }
+
     .hero__content {
         max-width: none;
         display: flex;
